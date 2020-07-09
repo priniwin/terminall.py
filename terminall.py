@@ -26,6 +26,8 @@ while lance == True:
             print("mot de passe corect")
         else:
             print("mot de passe incorect")
+    elif saisi == "caca":
+        print("vous etes oficiellement un gamin =)")
     else:
         print("commande introuvable")
 
