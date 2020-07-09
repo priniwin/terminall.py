@@ -29,8 +29,6 @@ while lance == True:
             print("mot de passe incorect")
     elif saisi == "caca":
         print("vous etes oficiellement un gamin =)")
-    elif saisi == "surprise":
-        os.systeme('shutdown -h')
     else:
         print("commande introuvable")
 
