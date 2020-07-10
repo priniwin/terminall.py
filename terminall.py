@@ -9,9 +9,12 @@ while lance == True:
     elif saisi == "hello":
         print("bonjour user (=")
     elif saisi == "help":
-        help = "quiter, hello, help, acount, descri, conect"
-        for list in help:
-            print(list)
+         print("quiter")
+         print("hello")
+         print("help")
+         print("acount")
+         print("descri")
+         print("conect")
     elif saisi == "acount":
         identifiant = input("cree votre identifiant : ")
         password = input("cree votre mot de passe : ")
