@@ -21,6 +21,7 @@ while lance == True:
          print("divis")
          print("adis")
          print("sous")
+         print("repet")
     elif saisi == "acount":
         identifiant = input("cree votre identifiant : ")
         password = input("cree votre mot de passe : ")
@@ -36,6 +37,7 @@ while lance == True:
         print("sous permet de faire une soustraction")
         print("help affiche les commande")
         print("descri affiche la description des commandes")
+        print("repet permet de repeter ce que vous marquez tapeexit pour sortir")
     elif saisi == "conect":
         id = input("rentrer votre identifiant : ")
         passw = input("rentre votre mot de passe : ")
@@ -65,6 +67,13 @@ while lance == True:
         sous1 = int(input("premier chiffre pour la soustraction : "))
         sous2 = int(input("deuxieme chiffre pour la soustraction : "))
         print("le resultat est {}".format(sous1 - sous2))
+    elif saisi == "repet":
+        lance2 = True
+        while lance2 == True: 
+            saisi2 = input("repet ")
+            print(saisi2)
+            if saisi2 == "exit":
+                break
     else:
         print("commande intouvable")
    
