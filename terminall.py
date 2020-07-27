@@ -22,6 +22,8 @@ while lance == True:
          print("adis")
          print("sous")
          print("repet")
+         print("roulette")
+         print("see")
     elif saisi == "acount":
         identifiant = input("cree votre identifiant : ")
         password = input("cree votre mot de passe : ")
@@ -38,6 +40,8 @@ while lance == True:
         print("help affiche les commande")
         print("descri affiche la description des commandes")
         print("repet permet de repeter ce que vous marquez tapeexit pour sortir")
+        print("roulette est le jeu du franc prix")
+        print("see permet de voir le code")
     elif saisi == "conect":
         id = input("rentrer votre identifiant : ")
         passw = input("rentre votre mot de passe : ")
@@ -74,6 +78,23 @@ while lance == True:
             print(saisi2)
             if saisi2 == "exit":
                 break
+    elif saisi == "roulette":
+    	print("ceci est le jeu du franc prix")
+    	print("le chiffre est entre 1 et 1000 bonne chance")
+    	import random
+    	prix = random.randint(1, 1000)
+    	prix2 = int(input("chiffre : "))
+
+    	if prix == prix2:
+    		print("vous avez gagnez bravo ! ")
+    	else:
+    		print("perdu le chiffre etatait {}".format(prix))
+    elif saisi == "see":
+    		conclu = input("voulez vous voir le code du programme ? : ")
+    		if conclu == "oui":
+    			print("voici le lien pour le code : https://github.com/priniwin/terminall.py/blob/master/terminall.py")
+    		else:
+    			print("dacord")	
     else:
-        print("commande intouvable")
-   
+    	print("commande introuvable")
+
